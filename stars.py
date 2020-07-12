@@ -4,8 +4,8 @@ import pgzrun  # 导入pgzero的模块运行工具pgzrun
 # pgzrun会自动引入下列对象，但显式导入可以方便编辑器补全、提示
 from pgzero.actor import Actor
 from pgzero.loaders import sounds
-from pgzero.clock import clock
-from pgzero.screen import Screen
+from pgzero.clock import clock 
+from pgzero.screen import Screen 
 from pgzero.rect import Rect 
 screen: Screen  # 类型标注
 

@@ -7,7 +7,7 @@ from pgzero.loaders import sounds
 from pgzero.clock import clock
 from pgzero.screen import Screen
 from pgzero.rect import Rect 
-screen: Screen  # 类型标注
+screen: Screen  # 类型标注 
 
 import time  # 导入time模块
 WIDTH = 1000 
@@ -115,8 +115,7 @@ def draw():
 def on_mouse_down(pos):
     global centerx,centery
     print(pos)
-    centerx = pos[0] 
-    centery = pos[1] 
+    centerx,centery = pos 
 def update(dt):
     update_stars(dt) 
     
@@ -127,3 +126,6 @@ def update(dt):
 # for _ in range(5):
 #     update(1 / 60)
 pgzrun.go()
+
+
+
